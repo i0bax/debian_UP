@@ -14,8 +14,8 @@ os.system("echo 'set base_path    /mnt/repo/repo/debian' > /etc/apt/mirror.list"
 os.system("echo 'set defaultarch  amd64' >> /etc/apt/mirror.list")
 os.system("echo 'set nthreads     20' >> /etc/apt/mirror.list")
 os.system("echo 'set _tilde 0' >> /etc/apt/mirror.list")
-os.system("echo 'deb-amd64 http://ftp.us.debian.org/debian unstable main contrib non-free' >> /etc/apt/mirror.list")
-os.system("echo 'clean http://ftp.us.debian.org/debian' >> /etc/apt/mirror.list")
+os.system("echo 'deb-amd64 http://ftp.pl.debian.org/debian jessie main contrib non-free' >> /etc/apt/mirror.list")
+os.system("echo 'clean http://ftp.pl.debian.org/debian' >> /etc/apt/mirror.list")
 os.system("apt-mirror")
 print('\x1b[1;32m' + 'ZROBIONE' + '\n' + '\x1b[0m')
 
