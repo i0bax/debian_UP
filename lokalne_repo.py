@@ -21,11 +21,7 @@ if args.t == True:
 	os.system("echo 'deb http://127.0.0.1/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list")
 	os.system("service apache2 restart")
 	print('\x1b[1;32m' + 'ZROBIONE' + '\x1b[0m')
-	'''
-	sprawdzic czy nie trzeba dodac linka !!
-	cd /var/spool/apt-mirror/mirror/ftp.de.debian.org/debian/dists
-	ln -s sarge/ stable
-	'''
+
 	# Kasowanie lokalnego repozytorium
 elif args.k == True:
 	print ('\x1b[1;34m' + 'KASOWANIE lokalnego repozytorium' + '\x1b[0m')
