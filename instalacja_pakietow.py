@@ -5,7 +5,7 @@ import os
 #instalacja repozytoriow
 print ('\x1b[1;34m' + 'DODAWANIE REPOZYTORIOW' + '\x1b[0m')
 os.system("apt-key adv --keyserver pgp.mit.edu --recv-keys ED444FF07D8D0BF6 ")
-os.system("echo '# Kali linux repo Dodane\ndeb http://http.kali.org/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list")
+os.system("echo '# Kali linux repo Dodane\ndeb http://127.0.0.1/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list")
 os.system("apt-get update -m")
 print('\x1b[1;32m' + 'ZAINSTALOWANE!' + '\x1b[0m')
 
@@ -36,7 +36,7 @@ os.system("apt-get install -y cryptcat cymothoa dbd dns2tcp http-tunnel httptunn
 print('\x1b[1;32m' + 'ZAINSTALOWANE!' + '\x1b[0m')
 # Reporting Tools
 print ('\x1b[1;34m' + 'INSTALACJA Reporting Tools' + '\x1b[0m')
-os.system("apt-get install -y casefile cutycapt dos2unix dradis keepnote magictree metagoofil nipper-ng pipal > /dev/null")  
+os.system("apt-get install -y casefile cutycapt dos2unix dradis keepnote magictree metagoofil nipper-ng pipal > /dev/null")
 print('\x1b[1;32m' + 'ZAINSTALOWANE!' + '\x1b[0m')
 # Exploitation Tools
 print ('\x1b[1;34m' + 'INSTALACJA Exploitation Tools' + '\x1b[0m')
