@@ -67,6 +67,7 @@ os.system("apt-get install -y usbguard usbguard-applet-qt")
 print('\x1b[1;32m' + 'ZAINSTALOWANE!' + '\x1b[0m')
 
 # Kasowanie repozytoriow
+os.system("apt-get autoremove")
 os.system("head -n-2 /etc/apt/sources.list > /etc/apt/sources.list.tmp")
 os.system("mv /etc/apt/sources.list.tmp /etc/apt/sources.list")
 print('\x1b[1;31m' + 'WPIS DO REPO SKASOWANY!' + '\x1b[0m')
