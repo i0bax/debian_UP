@@ -5,6 +5,7 @@ import os
 #instalacja repozytoriow
 print ('\x1b[1;34m' + 'DODAWANIE REPOZYTORIOW' + '\x1b[0m')
 os.system("echo '# Kali linux repo Dodane\ndeb http://127.0.0.1/kali kali-rolling main contrib non-free' >> /etc/apt/sources.list")
+os.system("apt-key add kali.gpg")
 os.system("apt-get update -m")
 print('\x1b[1;32m' + 'ZAINSTALOWANE!' + '\x1b[0m')
 
